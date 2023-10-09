@@ -5,15 +5,15 @@ abstract class Conexion
 	private static $servidor = 'localhost';
 	private static $usuario = 'root';
 	private static $contraseña = '';
-	protected $bd_nombre = 'escuela';
+	protected $bd_nombre = 'urquiza49_bd';
 	protected $query;
 	protected $rows = array();
 	private $conexion;
 	
 	//Métodos abstractos para ABM de clases que hereden. 
 	abstract protected function get();
-	abstract protected function set();
-	abstract protected function edit();
+	abstract protected function insert();
+	abstract protected function update();
 	abstract protected function delete();
 	 
 	//Conectar a la base de datos.
